@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "make": "Jaguar",
+        "model": "XF",
+        "colour": "Crimson",
+        "year": "2016"
+    },
+    {
+        "id": "2",
+        "make": "Honda",
+        "model": "Accord",
+        "colour": "Silver",
+        "year": "2017"
+    },
+    {
+        "id": "3",
+        "make": "Alfa Romeo",
+        "model": "Giulietta",
+        "colour": "White",
+        "year": "2017"
+    },
+    {
+        "id": "4",
+        "make": "Mini Cooper",
+        "model": "Countryman",
+        "colour": "Black",
+        "year": "2014"
+    },
+    {
+        "id": "5",
+        "make": "BMW",
+        "model": "380d",
+        "colour": "Night Blue",
+        "year": "2020"
+    },
+    {
+        "id": "6",
+        "make": "VW",
+        "model": "Golf",
+        "colour": "Black",
+        "year": "2010"
+    }
+]
