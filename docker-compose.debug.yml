@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  reactexpress:
+    image: reactexpress
+    build:
+      context: .
+      dockerfile: ./Dockerfile
