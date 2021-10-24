@@ -121,9 +121,9 @@ pipeline {
   }
   
   post {
-    always {
-      archiveArtifacts artifacts: "build/${FILENAME}"
-    }
+//     always {
+//       archiveArtifacts artifacts: "build/${FILENAME}"
+//     }
     cleanup {
       cleanWs()
     } 
