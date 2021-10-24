@@ -28,51 +28,51 @@ pipeline {
         echo "The name of this stage: ${STAGE_NAME}"
         //echo "The credentials Username: ${GITHUB_USER}"
         //greeting(params.name)
-        script{
-          utils.replaceString()
-        }
+//         script{
+//           utils.replaceString()
+//         }
       }
     }
     
-    stage("Python Build"){
-      agent {
-        docker {
-          image "python:latest"
-          args "-v ${WORKSPACE}/python:/home/python"
-        }
-      }
+//     stage("Python Build"){
+//       agent {
+//         docker {
+//           image "python:latest"
+//           args "-v ${WORKSPACE}/python:/home/python"
+//         }
+//       }
       
-      steps {
-        sh '''
-        python3 --version > /home/python/python_version.txt
-        '''
-      }
-    }
+//       steps {
+//         sh '''
+//         python3 --version > /home/python/python_version.txt
+//         '''
+//       }
+//     }
     
-    stage("Docker Build"){
-      agent {
-        docker {
-          image "node:latest"
-          args "-v ${WORKSPACE}/docker:/home/node"
-        }
-      }
+//     stage("Docker Build"){
+//       agent {
+//         docker {
+//           image "node:latest"
+//           args "-v ${WORKSPACE}/docker:/home/node"
+//         }
+//       }
       
-      steps {
-        sh '''
-        node --version > /home/node/docker_node_version
-        npm --version > /home/node/docker_npm_version
-        '''
-      }
-    }
+//       steps {
+//         sh '''
+//         node --version > /home/node/docker_node_version
+//         npm --version > /home/node/docker_npm_version
+//         '''
+//       }
+//     }
     
-    stage("Test") {
-      steps {            
-          sh """         
-            chmod +x contains.sh 
-            ./contains.sh "jenkins"
-          """
-      } 
-    }
+//     stage("Test") {
+//       steps {            
+//           sh """         
+//             chmod +x contains.sh 
+//             ./contains.sh "jenkins"
+//           """
+//       } 
+//     }
     
     stage("Package Artifact"){
       steps {
